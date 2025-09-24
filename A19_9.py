@@ -1,13 +1,12 @@
-#2,4,6,8,10. ==>answer
-
-"""
-for i in range(1,11): #1,2,3,4,5,6,7,8,9,10
+# Loop through numbers from 1 to 10
+for i in range(1, 11):  # Generates numbers: 1,2,3,4,5,6,7,8,9,10
+    # If the number is 10, print it without a trailing comma and end with a dot
     if i == 10:
-        print(i,end=".")   #
-    elif i%2==0:
-        print(i,end=",")
-print(".")
-"""
+        print(i, end=".")  # Prints 10.
+    # If the number is even (2,4,6,8), print it followed by a comma
+    elif i % 2 == 0:
+        print(i, end=",")  # Prints even numbers with a comma
+
 from itertools import count
 
 """
@@ -194,4 +193,5 @@ for i in range(0,a):
     elif c=="a":
         c="@"
     else:
+
         c="1"
