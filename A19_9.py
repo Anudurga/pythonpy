@@ -7,7 +7,7 @@ for i in range(1, 11):  # Generates numbers: 1,2,3,4,5,6,7,8,9,10
     elif i % 2 == 0:
         print(i, end=",")  # Prints even numbers with a comma
 
-from itertools import count
+
 
 """
 solution 1
@@ -195,3 +195,4 @@ for i in range(0,a):
     else:
 
         c="1"
+
