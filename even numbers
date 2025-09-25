@@ -6,3 +6,26 @@ for i in range(1, 11):  # Generates numbers: 1,2,3,4,5,6,7,8,9,10
     # If the number is even (2,4,6,8), print it followed by a comma
     elif i % 2 == 0:
         print(i, end=",")  # Prints even numbers with a comma
+
+
+
+
+
+# Program to print even numbers up to x with proper formatting (commas and period)
+
+x = int(input("Enter x: "))  # Example: 4 or 7
+
+# Loop through numbers from 1 to x-1
+for i in range(1, x):
+    if x % 2 == 0:  # If x is even
+        if i == x - 2:  # Check if this is the second last number (last even number)
+            print(i, end=".")  # Print with a period
+        elif i % 2 == 0:  # Print even numbers
+            print(i, end=",")
+    else:  # If x is odd
+        if i == x - 1:  # Check if this is the last number
+            print(i, end=".")  # Print with a period
+        elif i % 2 == 0:  # Print even numbers
+            print(i, end=",")
+
+
